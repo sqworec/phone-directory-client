@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    background-color: #a1a1a1;
+    height: 50px;
+}
+
+.buttonContainer {
+    align-content: center;
+    justify-content: center;
+}
