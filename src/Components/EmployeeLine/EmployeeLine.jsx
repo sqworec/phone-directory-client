@@ -5,7 +5,7 @@ function EmployeeLine({employee}) {
     return (
         <tr className={"employee"}>
             <td className={"idColumn"}>{employee.ID}</td>
-            <td>{employee.Full_name}</td>
+            <td><b>{employee.Full_name}</b></td>
             <td>{employee.Department}</td>
             <td>{employee.Post}</td>
             <td>{employee.Internal_phone_number}</td>

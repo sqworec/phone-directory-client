@@ -1,11 +1,13 @@
 import './Header.css'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function Header() {
     return (
         <header>
             <div className={"buttonContainer"}>
                 <Link to={"/all-employees"}>Сотрудники</Link>
-                <Link to={"/add-employee"}>Добавление</Link>
+                <Link to={"/add-employee"}>Добавить</Link>
+                <Link to={"/delete-employee"}>Удалить</Link>
+                <Link to={"/search-employee"}>Поиск</Link>
             </div>
         </header>
     )
