@@ -31,7 +31,6 @@ function AddEmployeePage() {
             body: JSON.stringify(data)
         })
             .then(() => {
-                alert(`Сотрудник ${employee.Full_name} успешно добавлен`)
                 router('/all-employees')
             })
     }

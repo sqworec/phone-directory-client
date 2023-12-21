@@ -37,6 +37,17 @@ function SearchEmployeesPage() {
 
     const router = useNavigate()
 
+    const resetFields = () => {
+        setSearchTerm({
+            Full_name: '',
+            Department: '',
+            Post: '',
+            Internal_phone_number: '',
+            City_phone_number: '',
+            Mobile_phone_number: ''}
+        )
+    }
+
     return (
         <>
             <form id={"employeeForm"}>
@@ -93,9 +104,8 @@ function SearchEmployeesPage() {
                     onChange={(e) => setSearchTerm({...searchTerm, Mobile_phone_number: e.target.value})}
                     required
                 />
-
-                {/*<button>Искать</button>*/}
             </form>
+            <button onClick={resetFields}>Сбросить</button>
 
             <EmployeesTable employees={filteredEmployees}/>
         </>

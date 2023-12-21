@@ -7,7 +7,8 @@ function Header() {
                 <Link to={"/all-employees"}>Сотрудники</Link>
                 <Link to={"/add-employee"}>Добавить</Link>
                 <Link to={"/delete-employee"}>Удалить</Link>
-                <Link to={"/search-employee"}>Поиск</Link>
+                <Link to={"/search-employees"}>Искать</Link>
+                <Link to={"/edit-employee"}>Редактировать</Link>
             </div>
         </header>
     )
