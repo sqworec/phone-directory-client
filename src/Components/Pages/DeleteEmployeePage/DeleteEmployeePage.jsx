@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
-
+import './DeleteEmployeePage.css'
 const DeleteEmployeePage = () => {
 
     const [id, setId] = useState('')
@@ -23,11 +23,12 @@ const DeleteEmployeePage = () => {
         <form onSubmit={handleDelete}>
             <label>ID:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 value={id}
                 onChange={(e) => setId(e.target.value)}
             />
-            <button>Удалить</button>
+            <button className={"redButton"}>Удалить</button>
         </form>
     )
 }

@@ -26,6 +26,6 @@ export default function EmployeesTable({employees = []}) {
             </div>
         )
     } else {
-        return <div>Пусто</div>
+        return <div className={"empty"}>Сотрудники не найдены</div>
     }
 }

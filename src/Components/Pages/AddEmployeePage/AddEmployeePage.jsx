@@ -39,6 +39,7 @@ function AddEmployeePage() {
         <form id={"employeeForm"} onSubmit={handleAddEmployee}>
             <label>ФИО:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 id={"Full_name"}
                 value={employee.Full_name}
@@ -48,6 +49,7 @@ function AddEmployeePage() {
 
             <label>Отдел:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 id={"Department"}
                 value={employee.Department}
@@ -57,6 +59,7 @@ function AddEmployeePage() {
 
             <label>Должность:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 id={"Post"}
                 value={employee.Post}
@@ -66,6 +69,7 @@ function AddEmployeePage() {
 
             <label>Внутренний телефон:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 id={"Internal_phone_number"}
                 value={employee.Internal_phone_number}
@@ -75,6 +79,7 @@ function AddEmployeePage() {
 
             <label>Городской телефон:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 id={"City_phone_number"}
                 value={employee.City_phone_number}
@@ -84,6 +89,7 @@ function AddEmployeePage() {
 
             <label>Мобильный телефон:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 id={"Mobile_phone_number"}
                 value={employee.Mobile_phone_number}

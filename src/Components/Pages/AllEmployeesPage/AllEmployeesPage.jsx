@@ -15,6 +15,9 @@ function AllEmployeesPage() {
             .catch(error => console.error('Error fetching data:', error));
     }, [])
 
+    employees.sort((a, b) => {
+        return a.Full_name.toLowerCase().localeCompare(b.Full_name.toLowerCase())
+    })
 
     return <EmployeesTable employees={employees}/>
 }

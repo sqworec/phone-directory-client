@@ -1,0 +1,7 @@
+.redButton {
+    background-color: red;
+}
+
+.redButton:hover {
+    background-color: #ef0000;
+}

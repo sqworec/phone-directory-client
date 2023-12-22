@@ -12,14 +12,16 @@ export default function App() {
     return (
         <Router>
             <Header/>
-            <Routes>
-                <Route path={"/"} element={<AllEmployeesPage/>}/>
-                <Route path={"/all-employees"} element={<AllEmployeesPage/>}/>
-                <Route path={"/add-employee"} element={<AddEmployeePage/>}/>
-                <Route path={"/delete-employee"} element={<DeleteEmployeePage/>}/>
-                <Route path={"/search-employees"} element={<SearchEmployeesPage/>}/>
-                <Route path={"/edit-employee"} element={<EditEmployeePage/>}/>
-            </Routes>
+            <div className={"container"}>
+                <Routes>
+                    <Route path={"/"} element={<AllEmployeesPage/>}/>
+                    <Route path={"/all-employees"} element={<AllEmployeesPage/>}/>
+                    <Route path={"/add-employee"} element={<AddEmployeePage/>}/>
+                    <Route path={"/delete-employee"} element={<DeleteEmployeePage/>}/>
+                    <Route path={"/search-employees"} element={<SearchEmployeesPage/>}/>
+                    <Route path={"/edit-employee"} element={<EditEmployeePage/>}/>
+                </Routes>
+            </div>
         </Router>
     );
 }

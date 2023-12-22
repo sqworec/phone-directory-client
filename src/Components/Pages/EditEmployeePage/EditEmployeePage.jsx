@@ -58,10 +58,16 @@ const EditEmployeePage = () => {
         })
     }
 
+    const cancelEditing = (e) => {
+        e.preventDefault()
+        setId('')
+    }
+
     return (
         <div>
             <label>ID:</label>
             <input
+                autoComplete={"off"}
                 type="text"
                 value={id}
                 onChange={(e) => setId(e.target.value)}
@@ -70,6 +76,7 @@ const EditEmployeePage = () => {
                 ? (<form id={"employeeForm"} onSubmit={handleEdit}>
                         <label>ФИО:</label>
                         <input
+                            autoComplete={"off"}
                             type="text"
                             id={"Full_name"}
                             value={employee.Full_name}
@@ -79,6 +86,7 @@ const EditEmployeePage = () => {
 
                         <label>Отдел:</label>
                         <input
+                            autoComplete={"off"}
                             type="text"
                             id={"Department"}
                             value={employee.Department}
@@ -88,6 +96,7 @@ const EditEmployeePage = () => {
 
                         <label>Должность:</label>
                         <input
+                            autoComplete={"off"}
                             type="text"
                             id={"Post"}
                             value={employee.Post}
@@ -97,6 +106,7 @@ const EditEmployeePage = () => {
 
                         <label>Внутренний телефон:</label>
                         <input
+                            autoComplete={"off"}
                             type="text"
                             id={"Internal_phone_number"}
                             value={employee.Internal_phone_number}
@@ -106,6 +116,7 @@ const EditEmployeePage = () => {
 
                         <label>Городской телефон:</label>
                         <input
+                            autoComplete={"off"}
                             type="text"
                             id={"City_phone_number"}
                             value={employee.City_phone_number}
@@ -115,6 +126,7 @@ const EditEmployeePage = () => {
 
                         <label>Мобильный телефон:</label>
                         <input
+                            autoComplete={"off"}
                             type="text"
                             id={"Mobile_phone_number"}
                             value={employee.Mobile_phone_number}
@@ -123,6 +135,7 @@ const EditEmployeePage = () => {
                         />
 
                         <button>Подтвердить</button>
+                        <button onClick={cancelEditing} style={{marginLeft: "15.7em"}} className={"redButton"}>Отмена</button>
                     </form>
                 )
                 : (

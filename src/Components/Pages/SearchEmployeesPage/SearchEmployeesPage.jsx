@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import {useNavigate} from 'react-router-dom';
 import EmployeesTable from "../../Employees/EmployeesTable";
 
 function SearchEmployeesPage() {
@@ -35,8 +34,6 @@ function SearchEmployeesPage() {
         return true;
     })
 
-    const router = useNavigate()
-
     const resetFields = () => {
         setSearchTerm({
             Full_name: '',
@@ -53,6 +50,7 @@ function SearchEmployeesPage() {
             <form id={"employeeForm"}>
                 <label>ФИО:</label>
                 <input
+                    autoComplete={"off"}
                     type="text"
                     id={"Full_name"}
                     value={searchTerm.Full_name}
@@ -62,6 +60,7 @@ function SearchEmployeesPage() {
 
                 <label>Отдел:</label>
                 <input
+                    autoComplete={"off"}
                     type="text"
                     id={"Department"}
                     value={searchTerm.Department}
@@ -71,6 +70,7 @@ function SearchEmployeesPage() {
 
                 <label>Должность:</label>
                 <input
+                    autoComplete={"off"}
                     type="text"
                     id={"Post"}
                     value={searchTerm.Post}
@@ -80,6 +80,7 @@ function SearchEmployeesPage() {
 
                 <label>Внутренний телефон:</label>
                 <input
+                    autoComplete={"off"}
                     type="text"
                     id={"Internal_phone_number"}
                     value={searchTerm.Internal_phone_number}
@@ -89,6 +90,7 @@ function SearchEmployeesPage() {
 
                 <label>Городской телефон:</label>
                 <input
+                    autoComplete={"off"}
                     type="text"
                     id={"City_phone_number"}
                     value={searchTerm.City_phone_number}
@@ -98,6 +100,7 @@ function SearchEmployeesPage() {
 
                 <label>Мобильный телефон:</label>
                 <input
+                    autoComplete={"off"}
                     type="text"
                     id={"Mobile_phone_number"}
                     value={searchTerm.Mobile_phone_number}

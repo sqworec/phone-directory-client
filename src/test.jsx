@@ -11,7 +11,8 @@ const Test = () => {
     return (
         <>
             <p>{name}</p>
-            <input type="text" id={name} onChange={handleChange}/>
+            <input autoComplete={"off"}
+ type="text" id={name} onChange={handleChange}/>
         </>
     )
 }
